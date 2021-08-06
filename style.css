@@ -4,10 +4,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
- 
-p{
-    color: #6C6C6C;
-}
+
 header{
     background-color: #2D25A0;
     height: 630px;
@@ -46,6 +43,8 @@ nav ul li a{
     background-color: white;
     border-radius: 10px;
 }
+
+/* baner */
 .top-baner{
     display: flex;
     width: 1071px;
@@ -60,9 +59,12 @@ nav ul li a{
     font-size: 65px;
     color: white;
     padding: 53px 0 10px 0;
+} 
+p{
+    color: #6C6C6C;
 }
 .half-width img{
-    width: 100%;
+    width: 90%;
     margin-left: 50px;
 }
 .button{
@@ -71,11 +73,16 @@ nav ul li a{
     padding: 10px 15px;
     background-color: #E02C6D;
 }
+.button:hover{ 
+    color: black;   
+    background-color: #d4e02c;
+}
 main{
     margin: 50px 0;
-   
+     
  
 }
+/* players css */
 .section-1{
     width: 80%;
     display: grid;
@@ -102,7 +109,7 @@ main{
     width: 90%;
     margin: 15PX;
 }
-.last-section{
+.last-section{   
     display: flex;
     width: 1050px;
     margin: auto;
@@ -125,6 +132,7 @@ main{
     margin-left: 50px;
 }
 footer{
+ 
     width: 300px;
     margin: auto;
 }
@@ -205,7 +213,7 @@ footer img{
         margin-top: 100px;
     }
     .half-width img{
-        width: 100%;
+        width: 95%;
        margin: 0;
     }
 
@@ -245,3 +253,93 @@ footer img{
     }
  
   }
+
+  @media (min-width: 576px) and (max-width: 768px) { 
+    nav ul{
+        display: none;
+        width: 100%;
+        margin: auto;
+        padding: 20px 0;
+    } 
+    nav ul li{
+        text-align: center;
+        }
+         
+        .log-in-button{
+            float: right;
+            margin-top: 17px;
+            margin-right: 25px;
+        } 
+
+       .toggle-button{
+           display: flex;
+       }
+       
+    .section-1{
+         width: 90%; 
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-gap: 25px; 
+        margin: auto;
+        row-gap: 25px;
+    }
+    .top-baner{
+        display: grid; 
+    }
+    .button{
+        margin-left: 15px;
+    }
+    .half-width{
+        width: 50%;
+        margin-left: 130px;
+         
+    }
+    .half-width h1{
+        font-size: 55px;
+        color: white;
+        padding:  15px;  
+    }
+    .second-half{
+        margin-top: 100px;
+    }
+    .half-width img{
+        width: 90%;
+       margin: 0;
+    }
+
+    header{
+      
+        height: 900px;
+         
+    }
+    .card img{
+        width: 90%;
+        margin: 20px;
+    }
+
+
+
+    .last-section{
+        display: grid;
+        width: 90%;
+       
+        padding-top: 100px;
+    }
+    .last-section div{
+         width: 100%;
+    }
+    .last-section h1{
+         
+        font-size: 35px;
+        margin:  15px;
+    }
+    .last-section p{
+        margin: 0 0 20px 15px;
+       
+    }
+    .last-section img{
+        width: 95%;
+        margin: 25px 15px;
+    }
+
+   }
